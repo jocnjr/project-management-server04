@@ -24,8 +24,8 @@ require('./configs/passport');
 // IF YOU STILL DIDN'T, GO TO 'configs/passport.js' AND UN-COMMENT OUT THE WHOLE FILE
 
 mongoose
-  // .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
-  .connect('mongodb://heroku_wmvbd2kv:us32vadn611v80b5r6qk49slhm@ds047448.mlab.com:47448/heroku_wmvbd2kv', { useNewUrlParser: true })
+  .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
+  // .connect('mongodb://heroku_wmvbd2kv:us32vadn611v80b5r6qk49slhm@ds047448.mlab.com:47448/heroku_wmvbd2kv', { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
